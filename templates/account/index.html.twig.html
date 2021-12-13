@@ -1,0 +1,15 @@
+{% extends 'base.html.twig.html' %}
+
+{% block title %}Mon compte la boutique{% endblock %}
+
+{% block content %}
+    <h1>Mon Compte</h1>
+    BienVenue {{app.user.firstname}} <br> dans votre compte. C'est dan cet espace que vous allez pouvoir
+    <hr>
+    <a href="{{path('account_password')}}">Modifier votre mot de passe</a> br
+    - Modifier mon mot de passe <br>
+    - Ajouter mes adresse   <br>
+    - Mes commandes   <br>
+
+{% endblock %}
+ 
